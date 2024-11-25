@@ -8,14 +8,14 @@ const filtersSlice = createSlice({
   name: "filters",
   initialState,
   reducers: {
-    /*Редьюсер для изменения имени фильтра*/
     changeFilter: (state, action) => {
-      state.name = action.payload;
+      state.name = action.payload; /* Обновляем имя фильтра*/
     },
   },
 });
-/* Экспортируем экшены для изменения фильтра name*/
+
+/* Экспортируем действия для изменения фильтра */
 export const { changeFilter } = filtersSlice.actions;
 
-/*Экспортируем редюсер слайса*/
+/* Экспортируем редюсер фильтров */
 export default filtersSlice.reducer;

@@ -22,7 +22,10 @@ const Contact = ({ contact }) => {
           <span className={css.phoneNumber}>{contact.number}</span>
         </div>
       </div>
-      <button className={css.deleteButton} onClick={handleDelete}>
+      <button
+        className={css.deleteButton}
+        onClick={() => handleDelete(contact.id)}
+      >
         Delete
       </button>
     </div>

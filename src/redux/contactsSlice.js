@@ -20,5 +20,8 @@ const slice = createSlice({
   },
 });
 
+/* Экспортируем действия для добавления и удаления контактов */
 export const { addContact, deleteContact } = slice.actions;
+
+/* Экспортируем редюсер контактов */
 export default slice.reducer;
